@@ -1,0 +1,67 @@
+.swiper image {
+  width: 100%;
+  height: auto;
+}
+
+.swiper .image_title {
+  width: 70%;
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  right: 5%;
+  bottom: 30px;
+  text-align: right;
+  position: absolute;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.list {
+  z-index: 1;
+  position: relative;
+  margin: -10px auto 0;
+}
+
+.list-time {
+  color: #fff;
+  padding: 5px 8%;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ffd300;
+  width: 20%;
+  margin-left: 5%;
+  animation-iteration-count: 5%;
+  box-shadow: 0 3px 10px 0 rgba(91, 115, 146, 0.15);
+}
+
+.list-item {
+  margin: 5% 0;
+}
+
+.list-con {
+  cursor: pointer;
+  display: flex;
+  padding: 5px;
+  margin: 10px 20px;
+  border-radius: 4px;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 3px 10px 0 rgba(91, 115, 146, 0.15);
+}
+
+.item-image {
+  margin-right: 5%;
+}
+
+.list-con image {
+  width: 75px;
+  height: 75px;
+}
+
+.list-con .list-title {
+  color: #5b7492;
+  font-size: 15px;
+  text-align: justify;
+  margin: 0;
+}

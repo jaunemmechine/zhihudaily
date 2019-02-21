@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="item-top">
+    <image class="item-img" src="{{dataList.image}}"></image>
+    <view class="item-title">{{dataList.title}}</view>
+  </view>
+  <view class="item-body">
+    <rich-text nodes="{{content}}"></rich-text>
+  </view>
+  <view class="item-more" wx:if="{{flag}}">
+    <van-button  type="primary" bindtap="getMore">查看评论</van-button>
+  </view>
+  <view class="more-item" wx:for='{{shortArr}}' wx:key="{{index1}}" wx:for-item="item1">
+    <view class="more-top">
+      <image class="more-avatar" src="{{item1.avatar}}" />
+      <view class="more-title">{{item1.author}}</view>
+    </view>
+    <view class='more-content'>{{item1.content}}</view>
+  </view>
+   <view class="more-item" wx:for='{{longArr}}' wx:key="{{index2}}" wx:for-item="item2">
+    <view class="more-top">
+      <image class="more-avatar" src="{{item2.avatar}}" />
+      <view class="more-title">{{item2.author}}</view>
+    </view>
+    <view class='more-content'>{{item2.content}}</view>
+  </view>
+
+</view>

@@ -1,0 +1,27 @@
+<view class='swiper'>
+  <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" duration="{{duration}}" interval='{{interval}}' bindchange="bindchange" circular="{{circular}}" style="height:{{imgheights[current]}}rpx;">
+    <block wx:for='{{imgList}}' wx:key="{{index}}">
+      <swiper-item>
+      <navigator url="/pages/detail/detail?id={{item.id}}">
+        <image src="{{item.image}}" data-id='{{index}}' class="slide-image" mode="widthFix" bindload="imageLoad" />
+        <view class="image_title">{{item.title}}</view>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="list" wx:for='{{list}}' wx:key="{{index1}}">
+    <view class="list-time">{{item.date}}</view>
+
+    <view class='list-item' wx:for='{{item.stories}}' wx:key="{{index2}}" wx:for-item="item1">
+      <navigator url="/pages/detail/detail?id={{item1.id}}">
+        <view class="list-con">
+          <view class="item-image">
+            <image src="{{item1.images[0]}}" />
+          </view>
+          <text class='list-title'>{{item1.title}}</text>
+        </view>
+      </navigator>
+    </view>
+
+  </view>
+</view>
