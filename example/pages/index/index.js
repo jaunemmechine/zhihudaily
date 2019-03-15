@@ -31,7 +31,6 @@ Page({
       imgheight = e.detail.height,
       //宽高比  
       ratio = imgwidth / imgheight;
-    console.log(imgwidth, imgheight)
     //计算的高度值  
     var viewHeight = 500 / ratio;
     var imgheight = viewHeight;
@@ -114,7 +113,6 @@ Page({
         'content-type': 'application/text'
       },
       success: function (res) {
-        console.log(res.data)
         // 回调函数
         let newlist = _this.data.list;
         newlist.push(res.data)

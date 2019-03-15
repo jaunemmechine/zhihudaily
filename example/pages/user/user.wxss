@@ -1,1 +1,32 @@
-/* pages/datil/datil.wxss */
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-image: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+/* .content ul{
+  display: flex;
+  flex-direction: column;
+    background: #fff;
+}
+.content ul li{
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  margin-left: 5px;
+
+} */
+

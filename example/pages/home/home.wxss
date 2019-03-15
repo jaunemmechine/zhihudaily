@@ -1,0 +1,27 @@
+/* pages/home/home.wxss */
+.title{font-size: 18px;margin-left: 20rpx;border-left:4px solid #09a087;padding-left: 10rpx}
+.flex{
+  display: flex;
+  flex-wrap:wrap;
+  margin: 20rpx 20rpx 20rpx 10rpx;
+}
+
+.flex>li{
+  flex-grow: 1; /* 子元素按1/n的比例进行拉伸 */
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 2;
+  color:rgba(60, 66, 66, 0.822);
+  width: 25%;
+  margin-left: 10rpx;
+  border:5rpx solid #fff;
+  border-radius: 8%;
+}
+.icon-sm{width:100px;height: 100px;margin-top: 5px}
+.flex>li:nth-of-type(3n){ /* 选择个数是3的倍数的元素 */
+  margin-right: 0;
+}
+.flex>li:nth-of-type(n+7){  /* 选择倒数的三个元素，n可以取0 */
+  margin-bottom: 0;
+}

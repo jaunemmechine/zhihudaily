@@ -1,2 +1,28 @@
-<!--pages/datil/datil.wxml-->
-<text>个人中心</text>
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="content">
+  <van-cell
+  title="个人信息"
+  is-link
+/>
+ <van-cell
+  title="意见反馈"
+  is-link
+/>
+ <van-cell
+  title="设置"
+  is-link
+/>
+ <van-cell
+  title="版本号"
+   is-link
+/>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/home/home.wxml-->
+<view style="margin:20rpx 0;">
+<text class="title">站点导航</text>
+<view class="square">
+  <ul class="square-inner flex">
+    <li> 
+    <navigator url="/pages/index/index">
+      <view>知乎日报</view>
+    </navigator>
+    </li>
+     <li> 
+    <navigator url="/pages/douban/douban">
+      <view>豆瓣电影</view>
+    </navigator>
+    </li>
+   
+  </ul>
+</view>
+</view>

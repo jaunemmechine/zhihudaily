@@ -1,19 +1,37 @@
 {
   "pages": [
+  
+    "pages/home/home",
+    "pages/user/user",
     "pages/index/index",
+    "pages/douban/douban",
     "pages/detail/detail",
-    "pages/user/user"
-    
+    "pages/doubanDetail/detail"
   ],
   "window": {
     "enablePullDownRefresh": true,
-    "navigationBarBackgroundColor": "#f8f8f8",
-    "navigationBarTitleText": "Vant Weapp",
+    "navigationBarBackgroundColor": "#4bd84b",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
     "backgroundTextStyle": "dark",
     "backgroundColor": "#f8f8f8"
   },
- 
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "images/user1.png",
+        "selectedIconPath": "images/user2.png"
+      }
+    ]
+  },
   "usingComponents": {
     "van-action-sheet": "../../dist/action-sheet/index",
     "van-area": "../../dist/area/index",
